@@ -27,16 +27,28 @@ WHERE condition
 ```
 
 ## Filtering and sorting Query results
-ini adalah Query untuk DISTINCT
-```SELECT DISTINCT column, another_column, …
+### ini adalah Query untuk DISTINCT
+
+```
+SELECT DISTINCT column, another_column, …
 FROM mytable
 WHERE condition(s);
 ```
 
-Ini adalah Query untuk ORDER BY
-```SELECT column, another_column, …
+### Ini adalah Query untuk ORDER BY
+
+```
+SELECT column, another_column, …
 FROM mytable
 WHERE condition(s)
 ORDER BY column ASC/DESC;
 ```
 
+### Ini adalah Query untuk LIMIT
+```
+SELECT column, another_column, …
+FROM mytable
+WHERE condition(s)
+ORDER BY column ASC/DESC
+LIMIT num_limit OFFSET num_offset;
+```
